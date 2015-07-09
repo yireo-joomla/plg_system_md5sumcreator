@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_MD5SUMCREATOR</name>
+    <author>Yireo</author>
+    <creationDate>July 2015</creationDate>
+    <copyright>Copyright 2015 Yireo.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <authorEmail>info@yireo.com</authorEmail>
+    <authorUrl>www.yireo.com</authorUrl>
+    <version>0.0.1</version>
+    <description>PLG_SYSTEM_MD5SUMCREATOR_DESC</description>
+
+    <files>
+        <filename plugin="md5sumcreator">md5sumcreator.php</filename>
+        <folder>fields</folder>
+    </files>
+
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_md5sumcreator.ini</language>
+        <language tag="en-GB">en-GB.plg_system_md5sumcreator.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields addfieldpath="plugins/system/md5sumcreator/fields" name="params">
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="plg_system_md5sumcreator">http://www.yireo.com/updates/plg_system_md5sumcreator.xml</server>
+    </updateservers>
+
+</extension>
